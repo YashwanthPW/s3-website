@@ -32,7 +32,6 @@ jobs:
         run: terraform plan -out=tfplan
         env:
           TF_LOG: DEBUG
-          TF_VAR_artifact_bucket_name: "100-my-static-website-3sxgbhl1"
 
       - name: Apply Terraform
         run: terraform apply -auto-approve
