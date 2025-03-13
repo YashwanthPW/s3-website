@@ -1,5 +1,8 @@
 resource "aws_s3_bucket" "static_site" {
   bucket = "100-my-static-website-yashwanthpoojari"
+  rule {
+    object_ownership = "BucketOwnerPreferred"
+  }
 }
 
 resource "aws_s3_bucket_website_configuration" "static_site" {
