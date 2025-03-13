@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "static_site" {
-  bucket = "100-my-static-website-${random_string.suffix.result}"
+  bucket = "100-my-static-website-yashwanthpoojari"
 }
 
 resource "aws_s3_bucket_website_configuration" "static_site" {
